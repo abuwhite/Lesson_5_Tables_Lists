@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 - Tables, Lists</title>
+    <style>
+        table, td, th
+        {
+            border:1px, solid;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ovo je tabela</h1> <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Datum rođenja</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Edin</td>
+                <td>Džeko</td>
+                <td>17.03.1986.</td>
+                <td>edin.dzeko@mail.com</td>
+            </tr>
+            <tr>
+                <td>Lana</td>
+                <td>Pudar</td>
+                <td>19.01.2006.</td>
+                <td>lana.pudar@mail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Podnožje tabele</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- LISTE -->
+
+    <h1>Liste</h1>
+    <h2>Unordered liste (Liste bez reda)</h2>
+    <ul type="disc">
+        <li>Ćevapi</li>
+        <li>Burek</li>
+        <li>Begova čorba</li>
+    </ul>
+
+    <h2>Ordered liste (Liste sa redom)</h2>
+    <ol start="10">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+    </ol>
+
+    <h2>Description list (Opisne liste)</h2>
+    <dl>
+        <dt>Osnove programiranja (Basic programming)</dt>
+        <dd>Code 1, Code 2, Code 3, Scratch</dd>
+        <dt>Napredno programiranje (Advanced programming)</dt>
+        <dd>AppInventor, CSD Unit 2, WordPress, CSD Unit 3</dd>
+        <dt>Uvod u profesionalno programiranje</dt>
+        <dd>Python</dd>
+        <dt>Profesionalno programiranje</dt>
+        <dd>HTML, CSS, JS, PHP, MySQL, React</dd>
+    </dl>
+
+    <h1 contenteditable="true">Pokušajte urediti ovaj heading</h1>
+
+    <p contenteditable="true">Pokušajte urediti ovaj paragraf</p>
+
+    <div contenteditable="true">Pokušajte urediti tekst ovog div-a</div>
+
+    <!-- VRIJEME -->
+    <h1>Vrijeme</h1>
+    <p>Imamo LiveClass u <time>19:00</time> danas.</p>  
+    <br>
+    <!-- DATUM I VRIJEME-->
+    <p>Imamo LiveClass u <time datetime="2024-10-18 19:00">19:00</time> danas.</p> 
+      
+    <br>
+
+    <label for="task">Postotak urađenih zadataka:</label>
+    <progress id="task" value="5" max="100"></progress> 5%
+
+    <label for="volume">Volume:</label>
+    <meter id="volume" value="90" min="0" max="100">90</meter> 90
+</body>
+</html>
